@@ -26,5 +26,5 @@ The game ends when all undercover players are eliminated (Civilians win) or when
 
 1. Clone the repository:
    ```bash
-   [git clone https://github.com/your-username/undercover-game-app.git](https://github.com/nouvalrfqi/UndercoverGames.git)
+   git clone https://github.com/your-username/undercover-game-app.git](https://github.com/nouvalrfqi/UndercoverGames.git
 
