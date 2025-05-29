@@ -153,10 +153,11 @@ public class CardSelectionActivity extends AppCompatActivity {
         ImageButton card4 = findViewById(R.id.card4);
         ImageButton card5 = findViewById(R.id.card5);
 
-        card1.setVisibility(cardSelected[0] ? View.GONE : View.VISIBLE);
-        card2.setVisibility(cardSelected[1] ? View.GONE : View.VISIBLE);
-        card3.setVisibility(cardSelected[2] ? View.GONE : View.VISIBLE);
-        card4.setVisibility(cardSelected[3] ? View.GONE : View.VISIBLE);
-        card5.setVisibility(cardSelected[4] ? View.GONE : View.VISIBLE);
+        card1.setVisibility(cardSelected[0] ? View.INVISIBLE : View.VISIBLE);
+        card2.setVisibility(cardSelected[1] ? View.INVISIBLE : View.VISIBLE);
+        card3.setVisibility(cardSelected[2] ? View.INVISIBLE : View.VISIBLE);
+        card4.setVisibility(cardSelected[3] ? View.INVISIBLE : View.VISIBLE);
+        card5.setVisibility(cardSelected[4] ? View.INVISIBLE : View.VISIBLE);
     }
+
 }

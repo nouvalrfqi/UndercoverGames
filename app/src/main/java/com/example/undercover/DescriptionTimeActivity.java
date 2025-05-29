@@ -80,20 +80,20 @@ public class DescriptionTimeActivity extends AppCompatActivity {
         if (playerNames[4] != null) name5.setText(playerNames[4]);
 
         // Sembunyikan kartu dan nama jika pemain sudah dieliminasi
-        card1.setVisibility(isEliminated[0] ? View.GONE : View.VISIBLE);
-        name1.setVisibility(isEliminated[0] ? View.GONE : View.VISIBLE);
+        card1.setVisibility(isEliminated[0] ? View.INVISIBLE : View.VISIBLE);
+        name1.setVisibility(isEliminated[0] ? View.INVISIBLE : View.VISIBLE);
 
-        card2.setVisibility(isEliminated[1] ? View.GONE : View.VISIBLE);
-        name2.setVisibility(isEliminated[1] ? View.GONE : View.VISIBLE);
+        card2.setVisibility(isEliminated[1] ? View.INVISIBLE : View.VISIBLE);
+        name2.setVisibility(isEliminated[1] ? View.INVISIBLE : View.VISIBLE);
 
-        card3.setVisibility(isEliminated[2] ? View.GONE : View.VISIBLE);
-        name3.setVisibility(isEliminated[2] ? View.GONE : View.VISIBLE);
+        card3.setVisibility(isEliminated[2] ? View.INVISIBLE : View.VISIBLE);
+        name3.setVisibility(isEliminated[2] ? View.INVISIBLE : View.VISIBLE);
 
-        card4.setVisibility(isEliminated[3] ? View.GONE : View.VISIBLE);
-        name4.setVisibility(isEliminated[3] ? View.GONE : View.VISIBLE);
+        card4.setVisibility(isEliminated[3] ? View.INVISIBLE : View.VISIBLE);
+        name4.setVisibility(isEliminated[3] ? View.INVISIBLE : View.VISIBLE);
 
-        card5.setVisibility(isEliminated[4] ? View.GONE : View.VISIBLE);
-        name5.setVisibility(isEliminated[4] ? View.GONE : View.VISIBLE);
+        card5.setVisibility(isEliminated[4] ? View.INVISIBLE : View.VISIBLE);
+        name5.setVisibility(isEliminated[4] ? View.INVISIBLE : View.VISIBLE);
     }
 
 }

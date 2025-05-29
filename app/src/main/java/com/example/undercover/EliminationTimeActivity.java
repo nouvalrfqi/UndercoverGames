@@ -76,9 +76,9 @@ public class EliminationTimeActivity extends AppCompatActivity {
                 nameLabels[i].setText(playerNames[i]); // <== Set nama pemain
                 cards[i].setOnClickListener(v -> showEliminationDialog(finalI));
             } else {
-                cards[i].setVisibility(View.GONE);
-                eliminateLabels[i].setVisibility(View.GONE);
-                nameLabels[i].setVisibility(View.GONE); // Sembunyikan juga nama
+                cards[i].setVisibility(View.INVISIBLE);
+                eliminateLabels[i].setVisibility(View.INVISIBLE);
+                nameLabels[i].setVisibility(View.INVISIBLE); // Sembunyikan juga nama
             }
         }
     }
@@ -97,12 +97,12 @@ public class EliminationTimeActivity extends AppCompatActivity {
             isEliminated[index] = true;
 
             // Hilangkan kartu dan label "ELIMINATE"
-            cards[index].setVisibility(View.GONE);
-            eliminateLabels[index].setVisibility(View.GONE);
+            cards[index].setVisibility(View.INVISIBLE);
+            eliminateLabels[index].setVisibility(View.INVISIBLE);
 
-            cards[index].setVisibility(View.GONE);
-            eliminateLabels[index].setVisibility(View.GONE);
-            nameLabels[index].setVisibility(View.GONE); // Sembunyikan nama pemain juga
+            cards[index].setVisibility(View.INVISIBLE);
+            eliminateLabels[index].setVisibility(View.INVISIBLE);
+            nameLabels[index].setVisibility(View.INVISIBLE); // Sembunyikan nama pemain juga
 
             showEliminationResult(index);
             dialog.dismiss();
