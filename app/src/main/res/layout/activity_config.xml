@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/civilian_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="4 CIVILIANS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/undercover_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 UNDERCOVER"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/civilian_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/pumkin"
+        android:layout_width="157dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="332dp"
+        android:src="@drawable/pumpkin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/skull"
+        android:layout_width="157dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="332dp"
+        android:src="@drawable/skull"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="245dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="80dp"
+        android:contentDescription="Start Game"
+        android:src="@drawable/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/undercover_count" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/back"
+        android:contentDescription="Start Game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="77dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="Start Game"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/settings_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

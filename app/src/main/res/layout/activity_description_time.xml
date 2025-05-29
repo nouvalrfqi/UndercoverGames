@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPTION TIME"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#A64B2A"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Subheader -->
+
+    <!-- Remaining Infiltrators -->
+
+    <TextView
+        android:id="@+id/subheader_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Describe your secret word"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text" />
+
+    <TextView
+        android:id="@+id/remaining_infiltrators_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining infiltrators"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/subheader_text"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cards Grid (Placeholder, will be populated dynamically) -->
+
+    <!-- Go To Vote Button -->
+
+    <!-- Back Button -->
+
+    <ImageView
+        android:id="@+id/infiltrator_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/infiltrator_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remaining_infiltrators_text" />
+
+    <!-- Card 1 -->
+    <ImageButton
+        android:id="@+id/card1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Card 1"
+        android:src="@drawable/card0"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infiltrator_icon" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintEnd_toEndOf="@id/card1" />
+
+
+    <ImageButton
+        android:id="@+id/card2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Card 2"
+        android:src="@drawable/card1"
+        app:layout_constraintTop_toTopOf="@id/card1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_33"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_66" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintStart_toStartOf="@id/card2"
+        app:layout_constraintEnd_toEndOf="@id/card2"
+         />
+
+
+    <!-- Card 3 -->
+    <ImageButton
+        android:id="@+id/card3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Card 3"
+        android:src="@drawable/card3"
+        app:layout_constraintTop_toTopOf="@id/card1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_66"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Card 4 -->
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@id/card3"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@id/card3"
+        app:layout_constraintTop_toBottomOf="@id/card3" />
+
+    <ImageButton
+        android:id="@+id/card4"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Card 4"
+        android:src="@drawable/card2"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintStart_toStartOf="@id/card1" />
+
+    <TextView
+        android:id="@+id/name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/card4"
+        app:layout_constraintStart_toStartOf="@id/card4"
+        app:layout_constraintEnd_toEndOf="@id/card4"
+        />
+
+
+    <!-- Card 5 -->
+    <ImageButton
+        android:id="@+id/card5"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Card 5"
+        android:src="@drawable/card4"
+        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintStart_toStartOf="@id/card2" />
+
+    <TextView
+        android:id="@+id/name5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 1"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/card5"
+        app:layout_constraintStart_toStartOf="@id/card5"
+        app:layout_constraintEnd_toEndOf="@id/card5"
+        />
+
+
+    <ImageButton
+        android:id="@+id/gotovote"
+        android:layout_width="226dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:src="@drawable/vote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
